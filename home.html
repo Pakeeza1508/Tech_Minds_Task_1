@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(rgba(2,3,64,67), rgba(62,4,6,98));
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+            color : yellow;
+        }
+        form{
+           text-align: center;
+        }
+        input{
+            padding: 10px;
+            border: 2px solid blue;
+        }
+        input:focus{
+            outline: none;
+        }
+        label{
+            font-size: 18px;
+            color: yellowgreen;
+        }
+        ::placeholder{
+            color: blue;
+        }
+        select{
+            padding: 10px;
+            margin-bottom: 20px;
+            color: blue;
+            border: 2px solid blue;
+        }
+        textarea{
+            height : 200px;
+            width : 500px;
+            color: blue;
+            font-size: 17px;;
+            border: 2px solid blue;
+        }
+        button{
+            height : 40px;
+            width : 120px;
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: yellow;
+            color :blue;
+            border: none;
+        }
+        button:hover{
+            font-size: 20px;
+            box-shadow: 0 0 10px 0 blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACT ME</h1>
+
+    <form action="pakeezaislam1508@gmail.com" method="post"  id="myform">
+    <label for="name">Your Name: </label>
+    <input type="text" placeholder="Name" required>
+    <br><br>
+    <label for="message">Select your Option : </label>
+    <select name="options">
+        <option value="1">Select</option>
+        <option value="2">HTML</option>
+        <option value="3">CSS</option>
+        <option value="4">Java Script</option>
+    </select>
+    <br>
+    <textarea name="message" id="msg">Write your message here----------</textarea>
+    <br>
+     <button value="submit">submit</button>
+    </form>
+</body>
+</html>
